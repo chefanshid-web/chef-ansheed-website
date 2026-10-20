@@ -49,10 +49,16 @@
             "addressLocality": "Muscat",
             "addressCountry": "OM"
           },
-          "owns": {
-            "@type": "Restaurant",
-            "@id": "https://chefanshid-web.github.io/chef-ansheed-website/#restaurant"
-          },
+          "owns": [
+            {
+              "@type": "Restaurant",
+              "@id": "https://chefanshid-web.github.io/chef-ansheed-website/#restaurant"
+            },
+            {
+              "@type": "FastFoodRestaurant",
+              "@id": "https://chefanshid-web.github.io/chef-ansheed-website/#fry-bae"
+            }
+          ],
           "worksFor": {
             "@type": "Restaurant",
             "@id": "https://chefanshid-web.github.io/chef-ansheed-website/#restaurant",
@@ -87,7 +93,7 @@
           "description": "Artisan restaurant and culinary destination in Al Hail South, Muscat, Oman, founded and operated by Chef Ansheed.",
           "image": "https://chefanshid-web.github.io/chef-ansheed-website/images/bayt-al-bites-storefront.jpg",
           "hasMenu": "https://chefanshid-web.github.io/chef-ansheed-website/images/bayt-al-bites-menu.jpg",
-          "url": "https://chefanshid-web.github.io/chef-ansheed-website/#bayt-al-bites",
+          "url": "https://chefanshid-web.github.io/chef-ansheed-website/#properties",
           "email": "baytalbites@gmail.com",
           "telephone": "+971569503813",
           "priceRange": "$$",
@@ -95,6 +101,24 @@
           "address": {
             "@type": "PostalAddress",
             "streetAddress": "Al Hail South",
+            "addressLocality": "Muscat",
+            "addressRegion": "Muscat Governorate",
+            "addressCountry": "OM"
+          }
+        },
+        {
+          "@type": "FastFoodRestaurant",
+          "@id": "https://chefanshid-web.github.io/chef-ansheed-website/#fry-bae",
+          "name": "FRY BAE by Bayt Al Bites",
+          "description": "Upcoming gourmet fried chicken restaurant in Al Kobra, Muscat, Oman, curated and owned by Chef Ansheed.",
+          "url": "https://chefanshid-web.github.io/chef-ansheed-website/#fry-bae",
+          "email": "baytalbites@gmail.com",
+          "telephone": "+971569503813",
+          "priceRange": "$$",
+          "servesCuisine": ["Fried Chicken", "Fast Casual", "Gourmet Burgers", "Loaded Fries"],
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Al Kobra",
             "addressLocality": "Muscat",
             "addressRegion": "Muscat Governorate",
             "addressCountry": "OM"
@@ -1293,12 +1317,12 @@
         <div class="logo">M. Ansheed</div>
         <ul class="nav-links">
             <li><a href="#about">About</a></li>
-            <li><a href="#bayt-al-bites">Bayt Al Bites</a></li>
             <li><a href="#experience">Experience</a></li>
             <li><a href="#featured">Sand & Koal</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#gallery">Gallery</a></li>
             <li><a href="#achievements">Achievements</a></li>
+            <li><a href="#properties">Properties</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
@@ -1306,9 +1330,9 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-content">
-            <div class="subtitle">Executive Chef & Owner of Bayt Al Bites | Michelin-Trained Culinary Artist</div>
+            <div class="subtitle">Michelin-Trained Culinary Artist | Mastering the Art of Cuisine</div>
             <h1>CHEF ANSHEED</h1>
-            <p class="tagline">Owner of Bayt Al Bites (Muscat, Oman) &bull; Michelin Guide & 5-Star UAE Experience &bull; Mastering the Art of Cuisine</p>
+            <p class="tagline">Muhammed Ansheed (Chef Anshid) &bull; Demi Chef de Partie &bull; 7+ Years UAE Luxury Hospitality &bull; From Kerala to Michelin Guide</p>
             <div class="cta-buttons">
                 <button class="btn btn-primary" onclick="document.getElementById('experience').scrollIntoView({behavior: 'smooth'})">View My Journey</button>
                 <button class="btn btn-secondary" onclick="document.getElementById('hire-me').scrollIntoView({behavior: 'smooth'})">Hire Me</button>
@@ -1343,87 +1367,6 @@
                         <span class="stat-number">900+</span>
                         <span class="stat-label">Daily Covers Managed</span>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Bayt Al Bites Restaurant Section -->
-    <section id="bayt-al-bites" class="bayt-section">
-        <div class="bayt-container">
-            <h2 class="section-title reveal" style="color:var(--gold);">Bayt Al Bites — My Restaurant in Muscat</h2>
-            <p style="text-align:center;color:#bbb;max-width:750px;margin:0 auto 50px;line-height:1.8;font-size:1.1rem;" class="reveal">
-                Founded and directed by Chef Ansheed, <strong style="color:var(--gold);">Bayt Al Bites</strong> in Al Hail South, Muscat, Oman brings together fine culinary discipline, heritage Malabar signatures, handcrafted in-house burgers, and refreshing juices for an unforgettable neighborhood dining experience.
-            </p>
-
-            <!-- Storefront Showcase Grid -->
-            <div class="bayt-grid">
-                <div class="bayt-card reveal">
-                    <div class="bayt-badge">📍 Al Hail South, Muscat, Oman</div>
-                    <img src="images/bayt-al-bites-storefront.jpg" alt="Bayt Al Bites Restaurant Storefront Muscat" onclick="openLightbox(this.src)">
-                    <div class="bayt-zoom-hint">🔍 Click to Expand Storefront</div>
-                </div>
-
-                <div class="bayt-info reveal">
-                    <h3>Bayt Al Bites</h3>
-                    <div class="bayt-loc">📍 Al Hail South, Muscat Governorate, Oman</div>
-                    <p>
-                        A welcoming artisan dining space where passion meets precision. From warm outdoor patio seating beneath ambient bistro lights to a bustling open kitchen, Bayt Al Bites serves authentic flavors crafted with high-standard hospitality discipline.
-                    </p>
-                    <p>
-                        Every recipe &mdash; from our secret-seasoning fresh in-house burger patties to traditional slow-cooked curries and hand-pressed fresh juices &mdash; reflects Chef Ansheed's uncompromising dedication to taste, quality, and guest satisfaction.
-                    </p>
-
-                    <div class="bayt-features">
-                        <div class="bayt-feature-pill">🍔 <span>In-House Fresh Patties</span></div>
-                        <div class="bayt-feature-pill">🍛 <span>Malabar Chef Signatures</span></div>
-                        <div class="bayt-feature-pill">🥪 <span>Porotta &amp; Croissant Bites</span></div>
-                        <div class="bayt-feature-pill">🥤 <span>Fresh Juices &amp; Bayt Al Roob</span></div>
-                    </div>
-
-                    <div class="bayt-contact-bar">
-                        <a href="mailto:baytalbites@gmail.com" class="bayt-btn bayt-btn-primary">
-                            <span>📧</span> baytalbites@gmail.com
-                        </a>
-                        <a href="https://wa.me/971569503813?text=Hello%20Chef%20Ansheed,%20I%20am%20inquiring%20about%20Bayt%20Al%20Bites%20Muscat" target="_blank" class="bayt-btn bayt-btn-secondary">
-                            <span>💬</span> WhatsApp Orders
-                        </a>
-                        <button onclick="openLightbox('images/bayt-al-bites-menu.jpg')" class="bayt-btn bayt-btn-secondary" style="color:var(--gold);border-color:var(--gold);">
-                            <span>📜</span> View Full Menu
-                        </button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Official Menu Showcase Grid -->
-            <div class="bayt-grid" style="align-items: center; margin-top: 30px;">
-                <div class="bayt-info reveal" style="order: 2;">
-                    <div class="bayt-badge" style="position:static;display:inline-block;margin-bottom:15px;">📜 Official Restaurant Menu</div>
-                    <h3 style="font-size:2rem;">Explore Our Complete Menu</h3>
-                    <p>
-                        Browse our full selection of freshly prepared dishes, combos, breakfast specials, hot teas, burgers, and signature drinks &mdash; with transparent pricing in Omani Rials (OMR).
-                    </p>
-                    <ul style="color:#ccc;line-height:2;padding-left:20px;margin-bottom:25px;">
-                        <li><strong style="color:var(--gold);">Malabar Chef Signatures:</strong> Kannur Muttappam, Appam Pollichathu, Kebab, Daily Curries, Kotthu Porotta</li>
-                        <li><strong style="color:var(--gold);">Burgers &amp; Sandwiches:</strong> Fresh Bun Burgers, Zinger, Double Patty, Club Sandwiches, Sarookh, Porotta rolls</li>
-                        <li><strong style="color:var(--gold);">Bayt Bundles &amp; Breakfast:</strong> Daily Veg/Non-Veg specials, Egg Omelettes, Hassan Matar</li>
-                        <li><strong style="color:var(--gold);">Fresh Juice &amp; Bayt Al Roob:</strong> Roob Al Shamam, Avocado, Omani Sunshine, Pappaya Paradise, Melon Mist</li>
-                    </ul>
-
-                    <div class="bayt-contact-bar">
-                        <button onclick="openLightbox('images/bayt-al-bites-menu.jpg')" class="bayt-btn bayt-btn-primary">
-                            <span>🔍</span> Open High-Res Menu (Full View)
-                        </button>
-                        <a href="mailto:baytalbites@gmail.com" class="bayt-btn bayt-btn-secondary">
-                            <span>📧</span> Order via Email
-                        </a>
-                    </div>
-                </div>
-
-                <div class="bayt-card reveal" style="order: 1;">
-                    <div class="bayt-badge">📜 Bayt Al Bites Menu</div>
-                    <img src="images/bayt-al-bites-menu.jpg" alt="Bayt Al Bites Official Menu Muscat" onclick="openLightbox(this.src)" style="height:550px;object-fit:contain;background:#fff;padding:8px;">
-                    <div class="bayt-zoom-hint">🔍 Click to Enlarge Full Menu</div>
                 </div>
             </div>
         </div>
@@ -1790,6 +1733,139 @@
                 <div class="achievement-content">
                     <h3>Flawless Safety Record</h3>
                     <p>Maintained 100% HACCP and food safety compliance record with zero reported incidents across 7+ years and 5 luxury properties — unwavering commitment to standards.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Properties Section -->
+    <section id="properties" class="bayt-section">
+        <div class="bayt-container">
+            <h2 class="section-title reveal" style="color:var(--gold);">PROPERTIES</h2>
+            <p style="text-align:center;color:#bbb;max-width:750px;margin:0 auto 50px;line-height:1.8;font-size:1.1rem;" class="reveal">
+                Restaurant brands and culinary properties owned, operated, and curated by Chef Ansheed across the Sultanate of Oman.
+            </p>
+
+            <!-- Property 1: Bayt Al Bites -->
+            <div style="margin-bottom: 70px;">
+                <div style="display:flex;align-items:center;gap:15px;margin-bottom:25px;justify-content:center;flex-wrap:wrap;" class="reveal">
+                    <span style="background:var(--gradient-gold);color:var(--dark);padding:6px 18px;border-radius:30px;font-weight:800;font-size:0.85rem;letter-spacing:0.5px;">ACTIVE RESTAURANT</span>
+                    <h3 style="color:var(--gold);font-size:2.2rem;margin:0;font-family:'Playfair Display',serif;">Bayt Al Bites</h3>
+                    <span style="color:var(--orange);font-weight:600;font-size:1.05rem;">📍 Al Hail South, Muscat, Oman</span>
+                </div>
+
+                <!-- Storefront Showcase Grid -->
+                <div class="bayt-grid">
+                    <div class="bayt-card reveal">
+                        <div class="bayt-badge">📍 Al Hail South, Muscat, Oman</div>
+                        <img src="images/bayt-al-bites-storefront.jpg" alt="Bayt Al Bites Restaurant Storefront Muscat" onclick="openLightbox(this.src)">
+                        <div class="bayt-zoom-hint">🔍 Click to Expand Storefront</div>
+                    </div>
+
+                    <div class="bayt-info reveal">
+                        <h3>Bayt Al Bites</h3>
+                        <div class="bayt-loc">📍 Al Hail South, Muscat Governorate, Oman</div>
+                        <p>
+                            A welcoming artisan dining destination in Al Hail South, Muscat where passion meets precision. From warm outdoor patio seating beneath ambient bistro lights to a bustling kitchen, Bayt Al Bites serves authentic flavors crafted with high-standard hospitality discipline.
+                        </p>
+                        <p>
+                            Every recipe &mdash; from our secret-seasoning fresh in-house burger patties to traditional slow-cooked curries, fragrant porotta sandwiches, and hand-pressed fresh juices &mdash; reflects Chef Ansheed's uncompromising dedication to taste, quality, and guest satisfaction.
+                        </p>
+
+                        <div class="bayt-features">
+                            <div class="bayt-feature-pill">🍔 <span>In-House Fresh Patties</span></div>
+                            <div class="bayt-feature-pill">🍛 <span>Malabar Chef Signatures</span></div>
+                            <div class="bayt-feature-pill">🥪 <span>Porotta &amp; Croissant Bites</span></div>
+                            <div class="bayt-feature-pill">🥤 <span>Fresh Juices &amp; Bayt Al Roob</span></div>
+                        </div>
+
+                        <div class="bayt-contact-bar">
+                            <a href="mailto:baytalbites@gmail.com" class="bayt-btn bayt-btn-primary">
+                                <span>📧</span> baytalbites@gmail.com
+                            </a>
+                            <a href="https://wa.me/971569503813?text=Hello%20Chef%20Ansheed,%20I%20am%20inquiring%20about%20Bayt%20Al%20Bites%20Muscat" target="_blank" class="bayt-btn bayt-btn-secondary">
+                                <span>💬</span> WhatsApp Orders
+                            </a>
+                            <button onclick="openLightbox('images/bayt-al-bites-menu.jpg')" class="bayt-btn bayt-btn-secondary" style="color:var(--gold);border-color:var(--gold);">
+                                <span>📜</span> View Full Menu
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Official Menu Showcase Grid -->
+                <div class="bayt-grid" style="align-items: center; margin-top: 30px;">
+                    <div class="bayt-info reveal" style="order: 2;">
+                        <div class="bayt-badge" style="position:static;display:inline-block;margin-bottom:15px;">📜 Official Restaurant Menu</div>
+                        <h3 style="font-size:2rem;">Explore Our Complete Menu</h3>
+                        <p>
+                            Browse our full selection of freshly prepared dishes, combos, breakfast specials, hot teas, burgers, and signature drinks &mdash; with transparent pricing in Omani Rials (OMR).
+                        </p>
+                        <ul style="color:#ccc;line-height:2;padding-left:20px;margin-bottom:25px;">
+                            <li><strong style="color:var(--gold);">Malabar Chef Signatures:</strong> Kannur Muttappam, Appam Pollichathu, Kebab, Daily Curries, Kotthu Porotta</li>
+                            <li><strong style="color:var(--gold);">Burgers &amp; Sandwiches:</strong> Fresh Bun Burgers, Zinger, Double Patty, Club Sandwiches, Sarookh, Porotta rolls</li>
+                            <li><strong style="color:var(--gold);">Bayt Bundles &amp; Breakfast:</strong> Daily Veg/Non-Veg specials, Egg Omelettes, Hassan Matar</li>
+                            <li><strong style="color:var(--gold);">Fresh Juice &amp; Bayt Al Roob:</strong> Roob Al Shamam, Avocado, Omani Sunshine, Pappaya Paradise, Melon Mist</li>
+                        </ul>
+
+                        <div class="bayt-contact-bar">
+                            <button onclick="openLightbox('images/bayt-al-bites-menu.jpg')" class="bayt-btn bayt-btn-primary">
+                                <span>🔍</span> Open High-Res Menu (Full View)
+                            </button>
+                            <a href="mailto:baytalbites@gmail.com" class="bayt-btn bayt-btn-secondary">
+                                <span>📧</span> Order via Email
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="bayt-card reveal" style="order: 1;">
+                        <div class="bayt-badge">📜 Bayt Al Bites Menu</div>
+                        <img src="images/bayt-al-bites-menu.jpg" alt="Bayt Al Bites Official Menu Muscat" onclick="openLightbox(this.src)" style="height:550px;object-fit:contain;background:#fff;padding:8px;">
+                        <div class="bayt-zoom-hint">🔍 Click to Enlarge Full Menu</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Property 2: Upcoming Venture — FRY BAE by Bayt Al Bites -->
+            <div id="fry-bae" style="border-top:1px dashed rgba(212, 175, 55, 0.35);padding-top:60px;" class="reveal">
+                <div style="display:flex;align-items:center;gap:15px;margin-bottom:25px;justify-content:center;flex-wrap:wrap;" class="reveal">
+                    <span style="background:linear-gradient(135deg, #E63946, #F4A261);color:white;padding:6px 18px;border-radius:30px;font-weight:800;font-size:0.85rem;letter-spacing:0.5px;">🚀 UPCOMING NEW LAUNCH</span>
+                    <h3 style="color:var(--gold);font-size:2.2rem;margin:0;font-family:'Playfair Display',serif;">Upcoming Oman Muscat (Al Kobra)</h3>
+                </div>
+
+                <div style="background:linear-gradient(135deg, rgba(230,57,70,0.12) 0%, rgba(244,162,97,0.12) 100%);border:2px solid var(--orange);border-radius:24px;padding:45px 35px;box-shadow:0 20px 50px rgba(0,0,0,0.6);position:relative;overflow:hidden;">
+                    <div style="position:absolute;top:20px;right:25px;background:var(--red);color:white;padding:6px 18px;border-radius:30px;font-weight:800;font-size:0.8rem;letter-spacing:1px;text-transform:uppercase;box-shadow:0 4px 15px rgba(230,57,70,0.5);">
+                        🔥 COMING SOON
+                    </div>
+
+                    <div style="max-width:850px;">
+                        <span style="color:var(--orange);font-weight:700;letter-spacing:1.5px;text-transform:uppercase;font-size:0.95rem;">Shop Name</span>
+                        <h3 style="font-size:2.8rem;color:white;margin:8px 0 15px;font-family:'Playfair Display',serif;">
+                            FRY BAE <span style="font-size:1.5rem;color:var(--gold);font-family:'Montserrat',sans-serif;font-weight:400;">by Bayt Al Bites</span>
+                        </h3>
+                        <div style="color:var(--gold-light);font-size:1.15rem;font-weight:600;margin-bottom:20px;display:flex;align-items:center;gap:8px;">
+                            <span>📍</span> Location: Al Kobra (Al Khuwair / Al Ghubra), Muscat, Oman
+                        </div>
+                        <p style="color:#ddd;line-height:1.9;font-size:1.05rem;margin-bottom:25px;">
+                            The next culinary evolution by Chef Ansheed &amp; Bayt Al Bites. <strong>FRY BAE</strong> brings an energetic, craveable fast-gourmet fried chicken concept to Muscat &mdash; specializing in ultra-crispy golden fried chicken, loaded chicken tenders, seasoned fries, and secret chef-crafted dipping sauces prepared with premium ingredients and unmatched crunch.
+                        </p>
+
+                        <div class="bayt-features" style="margin-bottom:30px;">
+                            <div class="bayt-feature-pill" style="border-color:rgba(244,162,97,0.5);">🍗 <span>Ultra-Crispy Fried Chicken</span></div>
+                            <div class="bayt-feature-pill" style="border-color:rgba(244,162,97,0.5);">🍟 <span>Loaded Secret-Spice Fries</span></div>
+                            <div class="bayt-feature-pill" style="border-color:rgba(244,162,97,0.5);">🔥 <span>Signature Homemade Dips</span></div>
+                            <div class="bayt-feature-pill" style="border-color:rgba(244,162,97,0.5);">📍 <span>Muscat, Oman</span></div>
+                        </div>
+
+                        <div class="bayt-contact-bar">
+                            <a href="mailto:baytalbites@gmail.com?subject=Inquiry%20regarding%20FRY%20BAE%20Muscat" class="bayt-btn bayt-btn-primary" style="background:linear-gradient(135deg, #E63946 0%, #F4A261 100%);color:white;">
+                                <span>📧</span> Inquiries: baytalbites@gmail.com
+                            </a>
+                            <a href="https://wa.me/971569503813?text=Hi%20Chef%20Ansheed,%20I%20am%20inquiring%20about%20FRY%20BAE%20in%20Muscat%20Al%20Kobra" target="_blank" class="bayt-btn bayt-btn-secondary" style="border-color:var(--orange);color:var(--orange);">
+                                <span>💬</span> WhatsApp for Updates
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
