@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://chefanshid-web.github.io/chef-ansheed-website/sitemap.xml

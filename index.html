@@ -3,7 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Muhammed Ansheed | Michelin-Trained Demi Chef de Partie</title>
+    <!-- CRITICAL SEO TAGS -->
+    <title>Chef Ansheed - Official Website & Recipes | Michelin-Trained Chef Dubai</title>
+    <meta name="description" content="Official website of Chef Ansheed (Muhammed Anshid). Discover authentic recipes, cooking techniques, culinary insights, and 7+ years luxury hospitality experience at Emirates Palace Mandarin Oriental and Jumeirah Beach Hotel.">
+    <meta name="keywords" content="Chef Ansheed, ansheed, chef, cooking, recipes, food, official site, Chef Anshid, Muhammed Ansheed, Muhammed Anshid, Chef Dubai, hire chef Dubai, professional chef UAE, Demi Chef de Partie, Emirates Palace Sand and Koal">
+    <meta name="author" content="Chef Ansheed">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://chefanshid-web.github.io/chef-ansheed-website/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://chefanshid-web.github.io/chef-ansheed-website/">
+    <meta property="og:title" content="Chef Ansheed - Official Website & Recipes">
+    <meta property="og:description" content="Official website of Chef Ansheed. Discover authentic recipes, cooking techniques, and culinary insights from Michelin-trained Demi Chef de Partie Chef Ansheed.">
+    <meta property="og:image" content="https://media.base44.com/images/public/69e67d1f2dab314dabbd409b/dc9bff940_3bb98797c_whatsapp_image_961173283535392.jpg">
+    <meta property="og:site_name" content="Chef Ansheed">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://chefanshid-web.github.io/chef-ansheed-website/">
+    <meta name="twitter:title" content="Chef Ansheed - Official Website & Recipes">
+    <meta name="twitter:description" content="Official website of Chef Ansheed. Discover authentic recipes, cooking techniques, and culinary insights from Michelin-trained Chef Ansheed.">
+    <meta name="twitter:image" content="https://media.base44.com/images/public/69e67d1f2dab314dabbd409b/dc9bff940_3bb98797c_whatsapp_image_961173283535392.jpg">
+
+    <!-- JSON-LD Structured Data for Google Indexing -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Person",
+          "@id": "https://chefanshid-web.github.io/chef-ansheed-website/#person",
+          "name": "Chef Ansheed",
+          "alternateName": ["Muhammed Ansheed", "Chef Anshid", "Muhammed Anshid"],
+          "jobTitle": "Demi Chef de Partie",
+          "description": "Michelin-trained Demi Chef de Partie with 7+ years of progressive UAE luxury hospitality experience at Emirates Palace Mandarin Oriental (Sand & Koal) and Jumeirah Beach Hotel.",
+          "worksFor": {
+            "@type": "Restaurant",
+            "name": "Sand & Koal - Emirates Palace Mandarin Oriental"
+          },
+          "image": "https://media.base44.com/images/public/69e67d1f2dab314dabbd409b/dc9bff940_3bb98797c_whatsapp_image_961173283535392.jpg",
+          "url": "https://chefanshid-web.github.io/chef-ansheed-website/",
+          "email": "chefanshid@gmail.com",
+          "telephone": "+971569503813",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Dubai",
+            "addressCountry": "UAE"
+          },
+          "knowsAbout": [
+            "Culinary Arts",
+            "Fine Dining Plating",
+            "Hot & Cold Kitchen Operations",
+            "Butchery",
+            "Mandi Cuisine",
+            "Recipe Standardization",
+            "HACCP Food Safety"
+          ],
+          "sameAs": [
+            "https://www.linkedin.com/in/chef-anshid-b89356322",
+            "https://github.com/chefanshid-web"
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://chefanshid-web.github.io/chef-ansheed-website/#website",
+          "url": "https://chefanshid-web.github.io/chef-ansheed-website/",
+          "name": "Chef Ansheed - Official Website & Recipes",
+          "description": "Official website of Chef Ansheed. Discover authentic recipes, cooking techniques, and culinary insights.",
+          "publisher": {
+            "@id": "https://chefanshid-web.github.io/chef-ansheed-website/#person"
+          }
+        }
+      ]
+    }
+    </script>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Montserrat:wght@300;400;600;800&display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
@@ -911,6 +985,7 @@
             gap: 12px;
             margin-bottom: 12px;
             justify-content: center;
+            flex-wrap: wrap;
         }
         .chef-avatar {
             width: 70px;
@@ -919,6 +994,7 @@
             object-fit: cover;
             border: 2px solid var(--gold);
             transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
         }
         .chef-avatar:hover {
             transform: scale(1.1);
@@ -930,6 +1006,7 @@
             text-align: center;
             margin-top: 5px;
             letter-spacing: 1px;
+            text-transform: uppercase;
         }
         .chef-single-img {
             width: 80px;
@@ -939,13 +1016,75 @@
             border: 2px solid var(--gold);
             margin-top: 15px;
             transition: transform 0.3s, box-shadow 0.3s;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            cursor: pointer;
         }
         .chef-single-img:hover {
             transform: scale(1.1);
             box-shadow: 0 0 15px rgba(212, 175, 55, 0.6);
         }
+        /* Lightbox */
+        #lightbox-overlay {
+            display: none;
+            position: fixed;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background: rgba(0,0,0,0.92);
+            z-index: 9999;
+            justify-content: center;
+            align-items: center;
+        }
+        #lightbox-overlay.active { display: flex; }
+        #lightbox-overlay img {
+            max-width: 90vw;
+            max-height: 90vh;
+            border-radius: 12px;
+            border: 2px solid var(--gold);
+        }
+        #lightbox-overlay .close-lb {
+            position: absolute;
+            top: 20px; right: 30px;
+            color: white;
+            font-size: 2rem;
+            cursor: pointer;
+        }
+        /* Hire Me Section */
+        .hire-section {
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+            padding: 80px 20px;
+            text-align: center;
+        }
+        .hire-cards {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+        .hire-card {
+            background: rgba(212, 175, 55, 0.08);
+            border: 1px solid var(--gold);
+            border-radius: 16px;
+            padding: 30px 24px;
+            width: 200px;
+            text-decoration: none;
+            color: white;
+            transition: transform 0.3s, background 0.3s;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 12px;
+        }
+        .hire-card:hover {
+            transform: translateY(-6px);
+            background: rgba(212, 175, 55, 0.18);
+        }
+        .hire-card .hire-icon { font-size: 2.5rem; }
+        .hire-card .hire-title { font-size: 0.9rem; font-weight: 600; color: var(--gold); }
+        .hire-card .hire-val { font-size: 0.8rem; color: #ccc; word-break: break-all; }
     </style>
-<base target="_blank">
 <base target="_blank">
 </head>
 <body>
@@ -970,12 +1109,12 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-content">
-            <div class="subtitle">Michelin-Trained Culinary Artist</div>
-            <h1>MUHAMMED ANSHEED</h1>
-            <p class="tagline">Demi Chef de Partie | 7+ Years UAE Luxury Hospitality | From Kerala to Michelin Guide</p>
+            <div class="subtitle">Michelin-Trained Culinary Artist | Mastering the Art of Cuisine</div>
+            <h1>CHEF ANSHEED</h1>
+            <p class="tagline">Muhammed Ansheed (Chef Anshid) &bull; Demi Chef de Partie &bull; 7+ Years UAE Luxury Hospitality &bull; From Kerala to Michelin Guide</p>
             <div class="cta-buttons">
                 <button class="btn btn-primary" onclick="document.getElementById('experience').scrollIntoView({behavior: 'smooth'})">View My Journey</button>
-                <button class="btn btn-secondary" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">Hire Me</button>
+                <button class="btn btn-secondary" onclick="document.getElementById('hire-me').scrollIntoView({behavior: 'smooth'})">Hire Me</button>
             </div>
             <div class="michelin-badge">⭐ Michelin Guide Experience ⭐</div>
         </div>
@@ -986,7 +1125,7 @@
         <h2 class="section-title reveal">Culinary Profile</h2>
         <div class="about-grid">
             <div class="about-image reveal">
-                <img src="images/about-chef.jpg" alt="Chef in Action">
+                <img src="https://base44.app/api/apps/69e67d1f2dab314dabbd409b/files/mp/public/69e67d1f2dab314dabbd409b/dc9bff940_3bb98797c_whatsapp_image_961173283535392.jpg" alt="Chef Anshid" style="cursor:pointer;border-radius:12px;" onclick="openLightbox(this.src)">
             </div>
             <div class="about-text reveal">
                 <h3>From Kerala to Michelin Stars</h3>
@@ -1020,20 +1159,28 @@
             <!-- Emirates Palace -->
             <div class="timeline-item reveal">
                 <div class="timeline-content">
-                    <img src="images/emirates-palace.jpg" alt="Emirates Palace" class="timeline-img">
+                    <img src="https://kimi-web-img.moonshot.cn/img/ik.imgkit.net/8d8d41cb0fa530d2655e5b6166b0bf0b8bd124a7.jpg" alt="Emirates Palace" class="timeline-img" style="cursor:pointer;" onclick="openLightbox(this.src)">
                     <div class="timeline-date">October 2023 — Present</div>
                     <h3 class="timeline-title">Commis Chef I</h3>
                     <div class="timeline-company">Emirates Palace Mandarin Oriental | Sand & Koal (Michelin Guide)</div>
                     <p class="timeline-desc">
                         Execute precise hot and cold food preparation for 80-120 covers nightly at Michelin Guide-listed restaurant under Executive Outlet Chef Jack Jarrot. Maintain 100% HACCP compliance with zero incidents. Deliver cross-section support for 300+ weekend covers. Reduced food waste by 12% through systematic stock control.
                     </p>
+                    <div class="chef-colleagues" style="margin-top:18px;">
+                        <div class="chef-label" style="color:var(--gold);font-size:0.75rem;margin-bottom:10px;">🍽️ My Dishes at Sand & Koal</div>
+                        <div class="chef-layer" style="gap:10px;">
+                            <img src="https://base44.app/api/apps/69e67d1f2dab314dabbd409b/files/mp/public/69e67d1f2dab314dabbd409b/ff9b5b858_2e10336e4_whatsapp_image_990087273678026.jpg" alt="Charred Lettuce Salad" style="width:85px;height:85px;object-fit:cover;border-radius:10px;border:2px solid var(--gold);cursor:pointer;" onclick="openLightbox(this.src)">
+                            <img src="https://base44.app/api/apps/69e67d1f2dab314dabbd409b/files/mp/public/69e67d1f2dab314dabbd409b/4d723b828_2c07e300b_whatsapp_image_1448335560668771.jpg" alt="Roasted Tomatoes" style="width:85px;height:85px;object-fit:cover;border-radius:10px;border:2px solid var(--gold);cursor:pointer;" onclick="openLightbox(this.src)">
+                            <img src="https://base44.app/api/apps/69e67d1f2dab314dabbd409b/files/mp/public/69e67d1f2dab314dabbd409b/5885d8f6b_7aeb6cd23_whatsapp_image_1494154132340651.jpg" alt="Beef Tartare" style="width:85px;height:85px;object-fit:cover;border-radius:10px;border:2px solid var(--gold);cursor:pointer;" onclick="openLightbox(this.src)">
+                        </div>
+                    </div>
                 </div>
             </div>
 
             <!-- Jumeirah Beach Hotel -->
             <div class="timeline-item reveal">
                 <div class="timeline-content">
-                    <img src="images/jumeirah-beach.jpg" alt="Jumeirah Beach Hotel" class="timeline-img">
+                    <img src="https://kimi-web-img.moonshot.cn/img/imgcy.trivago.com/d7fb238f02be89128b3f7df6e1af839df392e78b.jpeg" alt="Jumeirah Beach Hotel" class="timeline-img" style="cursor:pointer;" onclick="openLightbox(this.src)">
                     <div class="timeline-date">2021 — 2023</div>
                     <h3 class="timeline-title">Commis Chef</h3>
                     <div class="timeline-company">Jumeirah Beach Hotel | Jumeirah Group (5-Star Luxury Resort)</div>
@@ -1041,25 +1188,23 @@
                         Executed multi-service production across breakfast (400+ covers), lunch (250+ covers), and dinner (300+ covers) buffet operations daily. Maintained stamina across 12-hour shifts. Supported $15K+ daily ingredient turnover. Collaborated with 25+ chef brigade, contributing to 4.8/5 guest satisfaction rating.
                     </p>
                     <div class="chef-colleagues">
-                        <div class="chef-label">COLLEAGUES I WORKED WITH</div>
+                        <div class="chef-label">Colleagues I Worked With</div>
                         <div class="chef-layer">
-                            <div style="text-align:center">
-                                <img src="images/colleague-jumeirah-1.jpg" alt="Chef Colleague 1" class="chef-avatar">
-                            </div>
-                            <div style="text-align:center">
-                                <img src="images/colleague-jumeirah-2.jpg" alt="Chef Colleague 2" class="chef-avatar">
-                            </div>
+                            <img src="https://base44.app/api/apps/69e67d1f2dab314dabbd409b/files/mp/public/69e67d1f2dab314dabbd409b/5a33ade48_5b18cf8a1_whatsapp_image_826748280499165.jpg" alt="Chef Colleague" class="chef-avatar" onclick="openLightbox(this.src)">
+                            <img src="https://base44.app/api/apps/69e67d1f2dab314dabbd409b/files/mp/public/69e67d1f2dab314dabbd409b/1c477a277_e483e8e5c_whatsapp_image_1048245498378602.jpg" alt="Chef Colleague" class="chef-avatar" onclick="openLightbox(this.src)">
                         </div>
                         <div class="chef-layer">
-                            <div style="text-align:center">
-                                <img src="images/colleague-jumeirah-3.jpg" alt="Chef Colleague 3" class="chef-avatar">
-                            </div>
-                            <div style="text-align:center">
-                                <img src="images/colleague-jumeirah-4.jpg" alt="Chef Colleague 4" class="chef-avatar">
-                            </div>
-                            <div style="text-align:center">
-                                <img src="images/colleague-jumeirah-5.jpg" alt="Chef Colleague 5" class="chef-avatar">
-                            </div>
+                            <img src="https://base44.app/api/apps/69e67d1f2dab314dabbd409b/files/mp/public/69e67d1f2dab314dabbd409b/06d1c5ae4_6ceb2c2d1_whatsapp_image_981476278175259.jpg" alt="Chef Colleague" class="chef-avatar" onclick="openLightbox(this.src)">
+                            <img src="https://base44.app/api/apps/69e67d1f2dab314dabbd409b/files/mp/public/69e67d1f2dab314dabbd409b/ec9276b95_1674fd26c_whatsapp_image_3169804586741027.jpg" alt="Chef Colleague" class="chef-avatar" onclick="openLightbox(this.src)">
+                            <img src="https://base44.app/api/apps/69e67d1f2dab314dabbd409b/files/mp/public/69e67d1f2dab314dabbd409b/16f35c44f_25a5cfa74_whatsapp_image_2011954172689461.jpg" alt="Chef Colleague" class="chef-avatar" onclick="openLightbox(this.src)">
+                        </div>
+                    </div>
+                    <div class="chef-colleagues" style="margin-top:18px;">
+                        <div class="chef-label" style="color:var(--gold);font-size:0.75rem;margin-bottom:10px;">🍽️ My Work at Jumeirah Beach Hotel</div>
+                        <div class="chef-layer" style="gap:10px;flex-wrap:wrap;">
+                            <img src="https://base44.app/api/apps/69e67d1f2dab314dabbd409b/files/mp/public/69e67d1f2dab314dabbd409b/36e123528_107d57095_whatsapp_image_1432963314821743.jpg" alt="Buffet spread" style="width:85px;height:85px;object-fit:cover;border-radius:10px;border:2px solid var(--gold);cursor:pointer;" onclick="openLightbox(this.src)">
+                            <img src="https://base44.app/api/apps/69e67d1f2dab314dabbd409b/files/mp/public/69e67d1f2dab314dabbd409b/da8223734_89c3f8cce_whatsapp_image_2038592266727840.jpg" alt="Nachos station" style="width:85px;height:85px;object-fit:cover;border-radius:10px;border:2px solid var(--gold);cursor:pointer;" onclick="openLightbox(this.src)">
+                            <img src="https://base44.app/api/apps/69e67d1f2dab314dabbd409b/files/mp/public/69e67d1f2dab314dabbd409b/1e92356af_e9ec74b0b_whatsapp_image_935235225780949.jpg" alt="NYE event" style="width:85px;height:85px;object-fit:cover;border-radius:10px;border:2px solid var(--gold);cursor:pointer;" onclick="openLightbox(this.src)">
                         </div>
                     </div>
                 </div>
@@ -1068,7 +1213,7 @@
             <!-- Oaks Ibn Battuta -->
             <div class="timeline-item reveal">
                 <div class="timeline-content">
-                    <img src="images/oaks-ibn-battuta.jpg" alt="Oaks Ibn Battuta" class="timeline-img">
+                    <img src="https://kimi-web-img.moonshot.cn/img/cf.bstatic.com/c5a7fa5192312d14e8181bfcf743d78028b6bd78.jpg" alt="Oaks Ibn Battuta" class="timeline-img" style="cursor:pointer;" onclick="openLightbox(this.src)">
                     <div class="timeline-date">March 2020 — July 2021</div>
                     <h3 class="timeline-title">Commis II (Promoted in 5 Months)</h3>
                     <div class="timeline-company">Oaks Ibn Battuta Gate Hotel, Dubai</div>
@@ -1081,7 +1226,7 @@
             <!-- Black Lemon Cloud Kitchen -->
             <div class="timeline-item reveal">
                 <div class="timeline-content">
-                    <img src="images/mandi-cuisine.jpg" alt="Mandi Cuisine" class="timeline-img">
+                    <img src="https://kimi-web-img.moonshot.cn/img/everylittlecrumb.com/90a691ebc9772e80c04453ca41bf774916856e43.jpg" alt="Mandi Cuisine" class="timeline-img" style="cursor:pointer;" onclick="openLightbox(this.src)">
                     <div class="timeline-date">2020 — 2021 (COVID-19 Period)</div>
                     <h3 class="timeline-title">Founder & Head Chef</h3>
                     <div class="timeline-company">Black Lemon Cloud Kitchen | Kerala, India</div>
@@ -1094,7 +1239,7 @@
             <!-- Movenpick -->
             <div class="timeline-item reveal">
                 <div class="timeline-content">
-                    <img src="images/movenpick.jpg" alt="Movenpick Hotel" class="timeline-img">
+                    <img src="https://kimi-web-img.moonshot.cn/img/dynamic-media-cdn.tripadvisor.com/13d4948e78c2f409c8f4e3e280e413efc1795a3c.jpg" alt="Movenpick Hotel" class="timeline-img" style="cursor:pointer;" onclick="openLightbox(this.src)">
                     <div class="timeline-date">2018 — 2020</div>
                     <h3 class="timeline-title">Commis III</h3>
                     <div class="timeline-company">Movenpick Hotel, Dubai</div>
@@ -1102,8 +1247,8 @@
                         Commenced UAE culinary career specializing in cold kitchen and butchery sections. Built foundational skills in meat breakdown, portioning, cold preparation, and charcuterie. Contributed to cold kitchen production for 400+ cover banqueting operations with full HACCP compliance.
                     </p>
                     <div style="text-align:center;">
-                        <img src="images/colleague-movenpick-1.jpg" alt="Chef Colleague" class="chef-single-img">
-                        <div class="chef-label">COLLEAGUE I WORKED WITH</div>
+                        <img src="https://base44.app/api/apps/69e67d1f2dab314dabbd409b/files/mp/public/69e67d1f2dab314dabbd409b/9b41ab219_5f978b487_whatsapp_image_1456380052307544.jpg" alt="Chef Colleague" class="chef-single-img" onclick="openLightbox(this.src)">
+                        <div class="chef-label">Colleague I Worked With</div>
                     </div>
                 </div>
             </div>
@@ -1111,7 +1256,7 @@
             <!-- Taza Tawa -->
             <div class="timeline-item reveal">
                 <div class="timeline-content">
-                    <img src="images/taza-tawa.jpg" alt="Restaurant Operations" class="timeline-img">
+                    <img src="https://kimi-web-img.moonshot.cn/img/thumbs.dreamstime.com/1f41a91457d1df491c7cd2cdefd4d25d37c5b53d.jpg" alt="Restaurant Operations" class="timeline-img" style="cursor:pointer;" onclick="openLightbox(this.src)">
                     <div class="timeline-date">2015 — 2018</div>
                     <h3 class="timeline-title">Restaurant Co-Manager & Kitchen Operations</h3>
                     <div class="timeline-company">Taza Tawa Family Restaurant Brand | Bangalore, India (3 Outlets)</div>
@@ -1128,7 +1273,7 @@
         <h2 class="section-title reveal" style="color: white;">Featured: Sand & Koal & Chef Jack Jarrot</h2>
         <div class="featured-grid">
             <div class="featured-image reveal">
-                <img src="images/sand-koal.jpg" alt="Sand and Koal Restaurant">
+                <img src="https://kimi-web-img.moonshot.cn/img/dynamic-media-cdn.tripadvisor.com/f80e6cbe38fd010230e32de1df0f139d41d1152c.jpg" alt="Sand and Koal Restaurant">
                 <div class="featured-badge">Michelin Guide Listed</div>
             </div>
             <div class="featured-content reveal">
@@ -1137,10 +1282,32 @@
                 <p>One of UAE's most prestigious culinary destinations, Sand & Koal is a Michelin Guide-listed restaurant that represents the pinnacle of fine dining in the Middle East. Working here has been the defining chapter of my culinary career.</p>
                 <p>Under the visionary leadership of Executive Outlet Chef Jack Jarrot, the restaurant delivers an extraordinary dining experience that blends international techniques with local flavors, serving 80-120 discerning guests nightly with impeccable standards.</p>
                 
-                <div class="chef-highlight">
-                    <h4>👨‍🍳 About Chef Jack Jarrot</h4>
-                    <p><strong>Executive Outlet Chef, Sand & Koal</strong> — A world-class culinary leader who has shaped the restaurant's Michelin-recognized identity. Chef Jack brings exceptional creativity, rigorous discipline, and an unwavering commitment to excellence. Under his mentorship, I have absorbed advanced fine dining techniques, elevating my technical execution and speed metrics by 25% within my first 6 months. His leadership style emphasizes precision, innovation, and the highest standards of kitchen brigade operations.</p>
+                <div class="chef-highlight" style="border-left: 3px solid var(--gold); padding-left: 18px; margin-top: 20px;">
+                    <h4 style="color:var(--gold);font-size:1.1rem;">⭐ Chef Jack Jarrot — A Legacy of Excellence</h4>
+                    <p style="margin-bottom:10px;"><strong>Executive Outlet Chef, Sand & Koal | Emirates Palace Mandarin Oriental</strong></p>
+                    <p style="margin-bottom:10px;">Chef Jack Jarrot is one of the most accomplished culinary figures in the Middle East — a Michelin-calibre chef whose career spans decades of world-class kitchens. He trained and worked directly under the legendary <strong style="color:var(--gold);">Gordon Ramsay</strong>, absorbing the relentless pursuit of perfection, uncompromising standards, and the artistry that defines true fine dining at the highest level.</p>
+                    <p style="margin-bottom:10px;">His journey took him across Europe's most prestigious establishments before landing in the UAE, where he became the visionary force behind Sand & Koal's Michelin Guide recognition. Chef Jack believes that great food is not just about technique — it is about storytelling, culture, and emotion on a plate.</p>
+                    <p style="margin-bottom:10px;"><em style="color:var(--gold-light);">"The kitchen is where discipline meets creativity. Every plate must tell a story — perfect in execution, unforgettable in experience."</em> — Chef Jack Jarrot</p>
+                    <p><strong style="color:var(--gold);">His Vision:</strong> Chef Jack is committed to elevating UAE's culinary scene to rank among the world's top fine dining destinations — nurturing the next generation of chefs with the same fire and precision that Gordon Ramsay instilled in him. Working under his mentorship has been the most transformative experience of my career, pushing me beyond limits I didn't know I had.</p>
                 </div>
+            </div>
+        </div>
+
+        <!-- Food Gallery - Sand & Koal -->
+        <div style="margin-top:40px;" class="reveal">
+            <div class="chef-label" style="font-size:0.85rem;margin-bottom:16px;color:var(--gold);">🍽️ My Work at Sand & Koal</div>
+            <div class="chef-layer" style="justify-content:center;gap:16px;flex-wrap:wrap;">
+                <img src="https://base44.app/api/apps/69e67d1f2dab314dabbd409b/files/mp/public/69e67d1f2dab314dabbd409b/62bb748dc_f0cb84d46_whatsapp_image_2350547958759137.jpg" alt="Oyster dish" style="width:160px;height:120px;object-fit:cover;border-radius:12px;border:2px solid var(--gold);cursor:pointer;" onclick="openLightbox(this.src)">
+            </div>
+        </div>
+
+        <!-- Food Gallery - Jumeirah Beach Hotel -->
+        <div style="margin-top:30px;" class="reveal">
+            <div class="chef-label" style="font-size:0.85rem;margin-bottom:16px;color:var(--gold);">🍽️ My Work at Jumeirah Beach Hotel</div>
+            <div class="chef-layer" style="justify-content:center;gap:16px;flex-wrap:wrap;">
+                <img src="https://base44.app/api/apps/69e67d1f2dab314dabbd409b/files/mp/public/69e67d1f2dab314dabbd409b/36e123528_107d57095_whatsapp_image_1432963314821743.jpg" alt="Buffet spread" style="width:160px;height:120px;object-fit:cover;border-radius:12px;border:2px solid var(--gold);cursor:pointer;" onclick="openLightbox(this.src)">
+                <img src="https://base44.app/api/apps/69e67d1f2dab314dabbd409b/files/mp/public/69e67d1f2dab314dabbd409b/da8223734_89c3f8cce_whatsapp_image_2038592266727840.jpg" alt="Nachos station" style="width:160px;height:120px;object-fit:cover;border-radius:12px;border:2px solid var(--gold);cursor:pointer;" onclick="openLightbox(this.src)">
+                <img src="https://base44.app/api/apps/69e67d1f2dab314dabbd409b/files/mp/public/69e67d1f2dab314dabbd409b/1e92356af_e9ec74b0b_whatsapp_image_935235225780949.jpg" alt="NYE event Burj Al Arab" style="width:160px;height:120px;object-fit:cover;border-radius:12px;border:2px solid var(--gold);cursor:pointer;" onclick="openLightbox(this.src)">
             </div>
         </div>
         
@@ -1149,9 +1316,10 @@
                 <h2 style="color: var(--gold);">The Mentors Who Shaped Me</h2>
                 <p>Throughout my 7+ year journey across UAE's finest kitchens, I have had the privilege of training under world-class culinary leaders who have profoundly influenced my technique, discipline, and leadership approach.</p>
                 
-                <div class="chef-highlight">
-                    <h4>👨‍🍳 Chef Jack Jarrot</h4>
-                    <p>Executive Outlet Chef at Sand & Koal, Emirates Palace. Taught me Michelin-calibre precision, advanced plating techniques, and the discipline required for ultra-luxury service.</p>
+                <div class="chef-highlight" style="border-left: 3px solid var(--gold); padding-left: 18px;">
+                    <h4 style="color:var(--gold);">⭐ Chef Jack Jarrot</h4>
+                    <p style="margin-bottom:8px;"><strong>Executive Outlet Chef, Sand & Koal — Gordon Ramsay Alumnus</strong></p>
+                    <p>The most influential mentor of my career. Having trained under Gordon Ramsay himself, Chef Jack brought world-class standards to every service. He taught me that Michelin-calibre cooking is not a style — it is a mindset. Under his direct guidance, my plating precision, speed under pressure, and understanding of fine dining philosophy transformed completely. His vision for the future of UAE cuisine inspires me every day I step into the kitchen.</p>
                 </div>
                 
                 <div class="chef-highlight">
@@ -1165,7 +1333,7 @@
                 </div>
             </div>
             <div class="featured-image reveal" style="order: 1;">
-                <img src="images/chef-jack-jarrot.jpg" alt="Chef Jack Jarrot">
+                <img src="https://kimi-web-img.moonshot.cn/img/www.caterermiddleeast.com/2d01d014501600212b7e9cd9f9594febfe6999e5.jpg" alt="Chef Jack Jarrot">
                 <div class="featured-badge">My Mentor</div>
             </div>
         </div>
@@ -1230,7 +1398,7 @@
         <h2 class="section-title reveal">Culinary Gallery</h2>
         <div class="gallery-grid">
             <div class="gallery-item reveal">
-                <img src="images/emirates-palace.jpg" alt="Emirates Palace">
+                <img src="https://kimi-web-img.moonshot.cn/img/ik.imgkit.net/8d8d41cb0fa530d2655e5b6166b0bf0b8bd124a7.jpg" alt="Emirates Palace">
                 <div class="gallery-overlay">
                     <h4>Emirates Palace Mandarin Oriental</h4>
                     <p>Abu Dhabi | Current Position</p>
@@ -1238,7 +1406,7 @@
             </div>
 
             <div class="gallery-item reveal">
-                <img src="images/sand-koal.jpg" alt="Sand and Koal">
+                <img src="https://kimi-web-img.moonshot.cn/img/dynamic-media-cdn.tripadvisor.com/f80e6cbe38fd010230e32de1df0f139d41d1152c.jpg" alt="Sand and Koal">
                 <div class="gallery-overlay">
                     <h4>Sand & Koal Restaurant</h4>
                     <p>Michelin Guide Listed</p>
@@ -1246,7 +1414,7 @@
             </div>
 
             <div class="gallery-item reveal">
-                <img src="images/jumeirah-beach.jpg" alt="Jumeirah Beach Hotel">
+                <img src="https://kimi-web-img.moonshot.cn/img/imgcy.trivago.com/d7fb238f02be89128b3f7df6e1af839df392e78b.jpeg" alt="Jumeirah Beach Hotel">
                 <div class="gallery-overlay">
                     <h4>Jumeirah Beach Hotel</h4>
                     <p>Dubai | 5-Star Luxury Resort</p>
@@ -1254,7 +1422,7 @@
             </div>
 
             <div class="gallery-item reveal">
-                <img src="images/oaks-ibn-battuta.jpg" alt="Oaks Ibn Battuta">
+                <img src="https://kimi-web-img.moonshot.cn/img/cf.bstatic.com/c5a7fa5192312d14e8181bfcf743d78028b6bd78.jpg" alt="Oaks Ibn Battuta">
                 <div class="gallery-overlay">
                     <h4>Oaks Ibn Battuta Gate Hotel</h4>
                     <p>Dubai | Promotion in 5 Months</p>
@@ -1262,7 +1430,7 @@
             </div>
 
             <div class="gallery-item reveal">
-                <img src="images/movenpick.jpg" alt="Movenpick">
+                <img src="https://kimi-web-img.moonshot.cn/img/dynamic-media-cdn.tripadvisor.com/13d4948e78c2f409c8f4e3e280e413efc1795a3c.jpg" alt="Movenpick">
                 <div class="gallery-overlay">
                     <h4>Movenpick Hotel</h4>
                     <p>Dubai | Career Foundation</p>
@@ -1270,7 +1438,7 @@
             </div>
 
             <div class="gallery-item reveal">
-                <img src="images/mandi-cuisine.jpg" alt="Mandi Cuisine">
+                <img src="https://kimi-web-img.moonshot.cn/img/everylittlecrumb.com/90a691ebc9772e80c04453ca41bf774916856e43.jpg" alt="Mandi Cuisine">
                 <div class="gallery-overlay">
                     <h4>Traditional Mandi Cuisine</h4>
                     <p>My Specialty | Whole Lamb/Chicken</p>
@@ -1278,7 +1446,7 @@
             </div>
 
             <div class="gallery-item reveal">
-                <img src="images/fine-dining-plating.webp" alt="Fine Dining Plating">
+                <img src="https://kimi-web-img.moonshot.cn/img/mocadining.com/f9d2509f6fccb55ffa8990c26132e1412fe0df47.webp" alt="Fine Dining Plating">
                 <div class="gallery-overlay">
                     <h4>Fine Dining Plating</h4>
                     <p>Michelin-Calibre Presentation</p>
@@ -1286,7 +1454,7 @@
             </div>
 
             <div class="gallery-item reveal">
-                <img src="images/luxury-dessert.jpg" alt="Gold Plating">
+                <img src="https://kimi-web-img.moonshot.cn/img/images.stockcake.com/9cd9c8e6f6c9a85679445ca2b44c911c6a1511fd.jpg" alt="Gold Plating">
                 <div class="gallery-overlay">
                     <h4>Luxury Dessert Finishing</h4>
                     <p>Gold Leaf & Artistic Detail</p>
@@ -1502,6 +1670,47 @@
             });
         });
     </script>
+
+    <!-- Lightbox -->
+    <div id="lightbox-overlay" onclick="closeLightbox()">
+        <span class="close-lb" onclick="closeLightbox()">✕</span>
+        <img id="lightbox-img" src="" alt="Full view">
+    </div>
+
+    <!-- Hire Me Section -->
+    <section id="hire-me" class="hire-section">
+        <h2 class="section-title reveal" style="color:var(--gold);">Hire Me</h2>
+        <p style="color:#aaa;max-width:600px;margin:0 auto 10px;line-height:1.8;" class="reveal">
+            Ready to bring Michelin-calibre discipline and technical excellence to your kitchen. Reach out via any channel below.
+        </p>
+        <div class="hire-cards reveal">
+            <a href="https://www.linkedin.com/in/chef-anshid-b89356322" target="_blank" class="hire-card">
+                <div class="hire-icon">💼</div>
+                <div class="hire-title">LinkedIn</div>
+                <div class="hire-val">Chef Anshid</div>
+            </a>
+            <a href="mailto:chefanshid@gmail.com" class="hire-card">
+                <div class="hire-icon">📧</div>
+                <div class="hire-title">Email</div>
+                <div class="hire-val">chefanshid@gmail.com</div>
+            </a>
+            <a href="https://wa.me/971569503813" target="_blank" class="hire-card">
+                <div class="hire-icon">💬</div>
+                <div class="hire-title">WhatsApp</div>
+                <div class="hire-val">+971 56 950 3813</div>
+            </a>
+        </div>
+    </section>
+
+    <script>
+    function openLightbox(src) {
+        document.getElementById('lightbox-img').src = src;
+        document.getElementById('lightbox-overlay').classList.add('active');
+    }
+    function closeLightbox() {
+        document.getElementById('lightbox-overlay').classList.remove('active');
+        document.getElementById('lightbox-img').src = '';
+    }
+    </script>
 </body>
 </html>
- 
