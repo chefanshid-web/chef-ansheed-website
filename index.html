@@ -85,11 +85,13 @@
           "@id": "https://chefanshid-web.github.io/chef-ansheed-website/#restaurant",
           "name": "Bayt Al Bites",
           "description": "Artisan restaurant and culinary destination in Al Hail South, Muscat, Oman, founded and operated by Chef Ansheed.",
-          "image": "https://media.base44.com/images/public/69e67d1f2dab314dabbd409b/dc9bff940_3bb98797c_whatsapp_image_961173283535392.jpg",
-          "url": "https://chefanshid-web.github.io/chef-ansheed-website/",
+          "image": "https://chefanshid-web.github.io/chef-ansheed-website/images/bayt-al-bites-storefront.jpg",
+          "hasMenu": "https://chefanshid-web.github.io/chef-ansheed-website/images/bayt-al-bites-menu.jpg",
+          "url": "https://chefanshid-web.github.io/chef-ansheed-website/#bayt-al-bites",
+          "email": "baytalbites@gmail.com",
           "telephone": "+971569503813",
           "priceRange": "$$",
-          "servesCuisine": ["Arabic", "Mandi", "Middle Eastern", "Continental"],
+          "servesCuisine": ["Arabic", "Malabar", "Burgers", "Fresh Juices", "Sandwiches", "Continental"],
           "address": {
             "@type": "PostalAddress",
             "streetAddress": "Al Hail South",
@@ -1117,6 +1119,167 @@
         .hire-card .hire-icon { font-size: 2.5rem; }
         .hire-card .hire-title { font-size: 0.9rem; font-weight: 600; color: var(--gold); }
         .hire-card .hire-val { font-size: 0.8rem; color: #ccc; word-break: break-all; }
+
+        /* Bayt Al Bites Section Styles */
+        .bayt-section {
+            background: radial-gradient(circle at center, #1b2838 0%, #0a0a0a 100%);
+            padding: 90px 20px;
+            position: relative;
+            overflow: hidden;
+            border-top: 1px solid rgba(212, 175, 55, 0.2);
+            border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+        }
+        .bayt-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .bayt-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+            margin-bottom: 50px;
+        }
+        .bayt-card {
+            position: relative;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.7);
+            border: 2px solid rgba(212, 175, 55, 0.35);
+            transition: transform 0.4s, border-color 0.4s, box-shadow 0.4s;
+            background: #111;
+        }
+        .bayt-card:hover {
+            transform: translateY(-8px);
+            border-color: var(--gold);
+            box-shadow: 0 25px 70px rgba(212, 175, 55, 0.25);
+        }
+        .bayt-card img {
+            width: 100%;
+            height: 480px;
+            object-fit: cover;
+            display: block;
+            cursor: pointer;
+            transition: transform 0.5s;
+        }
+        .bayt-card:hover img {
+            transform: scale(1.04);
+        }
+        .bayt-badge {
+            position: absolute;
+            top: 18px;
+            left: 18px;
+            background: var(--gradient-gold);
+            color: var(--dark);
+            padding: 8px 20px;
+            border-radius: 50px;
+            font-weight: 800;
+            font-size: 0.85rem;
+            letter-spacing: 0.5px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+            z-index: 2;
+        }
+        .bayt-zoom-hint {
+            position: absolute;
+            bottom: 15px;
+            right: 15px;
+            background: rgba(10, 10, 10, 0.85);
+            color: var(--gold);
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.78rem;
+            font-weight: 600;
+            border: 1px solid var(--gold);
+            pointer-events: none;
+        }
+        .bayt-info h3 {
+            font-size: 2.3rem;
+            color: var(--gold);
+            margin-bottom: 12px;
+            font-family: 'Playfair Display', serif;
+        }
+        .bayt-info .bayt-loc {
+            color: var(--orange);
+            font-size: 1.05rem;
+            font-weight: 600;
+            margin-bottom: 18px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .bayt-info p {
+            color: #ddd;
+            line-height: 1.8;
+            margin-bottom: 18px;
+            font-size: 1.02rem;
+        }
+        .bayt-features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 12px;
+            margin: 25px 0;
+        }
+        .bayt-feature-pill {
+            background: rgba(212, 175, 55, 0.08);
+            border: 1px solid rgba(212, 175, 55, 0.35);
+            border-radius: 12px;
+            padding: 12px 16px;
+            color: white;
+            font-size: 0.88rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            transition: background 0.3s;
+        }
+        .bayt-feature-pill:hover {
+            background: rgba(212, 175, 55, 0.18);
+        }
+        .bayt-contact-bar {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-top: 25px;
+        }
+        .bayt-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 24px;
+            border-radius: 50px;
+            font-weight: 700;
+            text-decoration: none;
+            transition: all 0.3s;
+            font-size: 0.92rem;
+            cursor: pointer;
+        }
+        .bayt-btn-primary {
+            background: var(--gradient-gold);
+            color: var(--dark);
+            box-shadow: 0 5px 20px rgba(212, 175, 55, 0.3);
+            border: none;
+        }
+        .bayt-btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(212, 175, 55, 0.5);
+        }
+        .bayt-btn-secondary {
+            background: transparent;
+            color: white;
+            border: 1px solid var(--gold);
+        }
+        .bayt-btn-secondary:hover {
+            background: rgba(212, 175, 55, 0.15);
+            transform: translateY(-3px);
+        }
+        @media (max-width: 900px) {
+            .bayt-grid {
+                grid-template-columns: 1fr;
+                gap: 35px;
+            }
+            .bayt-card img {
+                height: 340px;
+            }
+        }
     </style>
 <base target="_blank">
 </head>
@@ -1130,6 +1293,7 @@
         <div class="logo">M. Ansheed</div>
         <ul class="nav-links">
             <li><a href="#about">About</a></li>
+            <li><a href="#bayt-al-bites">Bayt Al Bites</a></li>
             <li><a href="#experience">Experience</a></li>
             <li><a href="#featured">Sand & Koal</a></li>
             <li><a href="#skills">Skills</a></li>
@@ -1179,6 +1343,87 @@
                         <span class="stat-number">900+</span>
                         <span class="stat-label">Daily Covers Managed</span>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bayt Al Bites Restaurant Section -->
+    <section id="bayt-al-bites" class="bayt-section">
+        <div class="bayt-container">
+            <h2 class="section-title reveal" style="color:var(--gold);">Bayt Al Bites — My Restaurant in Muscat</h2>
+            <p style="text-align:center;color:#bbb;max-width:750px;margin:0 auto 50px;line-height:1.8;font-size:1.1rem;" class="reveal">
+                Founded and directed by Chef Ansheed, <strong style="color:var(--gold);">Bayt Al Bites</strong> in Al Hail South, Muscat, Oman brings together fine culinary discipline, heritage Malabar signatures, handcrafted in-house burgers, and refreshing juices for an unforgettable neighborhood dining experience.
+            </p>
+
+            <!-- Storefront Showcase Grid -->
+            <div class="bayt-grid">
+                <div class="bayt-card reveal">
+                    <div class="bayt-badge">📍 Al Hail South, Muscat, Oman</div>
+                    <img src="images/bayt-al-bites-storefront.jpg" alt="Bayt Al Bites Restaurant Storefront Muscat" onclick="openLightbox(this.src)">
+                    <div class="bayt-zoom-hint">🔍 Click to Expand Storefront</div>
+                </div>
+
+                <div class="bayt-info reveal">
+                    <h3>Bayt Al Bites</h3>
+                    <div class="bayt-loc">📍 Al Hail South, Muscat Governorate, Oman</div>
+                    <p>
+                        A welcoming artisan dining space where passion meets precision. From warm outdoor patio seating beneath ambient bistro lights to a bustling open kitchen, Bayt Al Bites serves authentic flavors crafted with high-standard hospitality discipline.
+                    </p>
+                    <p>
+                        Every recipe &mdash; from our secret-seasoning fresh in-house burger patties to traditional slow-cooked curries and hand-pressed fresh juices &mdash; reflects Chef Ansheed's uncompromising dedication to taste, quality, and guest satisfaction.
+                    </p>
+
+                    <div class="bayt-features">
+                        <div class="bayt-feature-pill">🍔 <span>In-House Fresh Patties</span></div>
+                        <div class="bayt-feature-pill">🍛 <span>Malabar Chef Signatures</span></div>
+                        <div class="bayt-feature-pill">🥪 <span>Porotta &amp; Croissant Bites</span></div>
+                        <div class="bayt-feature-pill">🥤 <span>Fresh Juices &amp; Bayt Al Roob</span></div>
+                    </div>
+
+                    <div class="bayt-contact-bar">
+                        <a href="mailto:baytalbites@gmail.com" class="bayt-btn bayt-btn-primary">
+                            <span>📧</span> baytalbites@gmail.com
+                        </a>
+                        <a href="https://wa.me/971569503813?text=Hello%20Chef%20Ansheed,%20I%20am%20inquiring%20about%20Bayt%20Al%20Bites%20Muscat" target="_blank" class="bayt-btn bayt-btn-secondary">
+                            <span>💬</span> WhatsApp Orders
+                        </a>
+                        <button onclick="openLightbox('images/bayt-al-bites-menu.jpg')" class="bayt-btn bayt-btn-secondary" style="color:var(--gold);border-color:var(--gold);">
+                            <span>📜</span> View Full Menu
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Official Menu Showcase Grid -->
+            <div class="bayt-grid" style="align-items: center; margin-top: 30px;">
+                <div class="bayt-info reveal" style="order: 2;">
+                    <div class="bayt-badge" style="position:static;display:inline-block;margin-bottom:15px;">📜 Official Restaurant Menu</div>
+                    <h3 style="font-size:2rem;">Explore Our Complete Menu</h3>
+                    <p>
+                        Browse our full selection of freshly prepared dishes, combos, breakfast specials, hot teas, burgers, and signature drinks &mdash; with transparent pricing in Omani Rials (OMR).
+                    </p>
+                    <ul style="color:#ccc;line-height:2;padding-left:20px;margin-bottom:25px;">
+                        <li><strong style="color:var(--gold);">Malabar Chef Signatures:</strong> Kannur Muttappam, Appam Pollichathu, Kebab, Daily Curries, Kotthu Porotta</li>
+                        <li><strong style="color:var(--gold);">Burgers &amp; Sandwiches:</strong> Fresh Bun Burgers, Zinger, Double Patty, Club Sandwiches, Sarookh, Porotta rolls</li>
+                        <li><strong style="color:var(--gold);">Bayt Bundles &amp; Breakfast:</strong> Daily Veg/Non-Veg specials, Egg Omelettes, Hassan Matar</li>
+                        <li><strong style="color:var(--gold);">Fresh Juice &amp; Bayt Al Roob:</strong> Roob Al Shamam, Avocado, Omani Sunshine, Pappaya Paradise, Melon Mist</li>
+                    </ul>
+
+                    <div class="bayt-contact-bar">
+                        <button onclick="openLightbox('images/bayt-al-bites-menu.jpg')" class="bayt-btn bayt-btn-primary">
+                            <span>🔍</span> Open High-Res Menu (Full View)
+                        </button>
+                        <a href="mailto:baytalbites@gmail.com" class="bayt-btn bayt-btn-secondary">
+                            <span>📧</span> Order via Email
+                        </a>
+                    </div>
+                </div>
+
+                <div class="bayt-card reveal" style="order: 1;">
+                    <div class="bayt-badge">📜 Bayt Al Bites Menu</div>
+                    <img src="images/bayt-al-bites-menu.jpg" alt="Bayt Al Bites Official Menu Muscat" onclick="openLightbox(this.src)" style="height:550px;object-fit:contain;background:#fff;padding:8px;">
+                    <div class="bayt-zoom-hint">🔍 Click to Enlarge Full Menu</div>
                 </div>
             </div>
         </div>
@@ -1567,8 +1812,12 @@
                 <a href="mailto:chefanshid@gmail.com">chefanshid@gmail.com</a>
             </div>
             <div class="contact-item">
+                <div class="icon">🍽️</div>
+                <a href="mailto:baytalbites@gmail.com">baytalbites@gmail.com</a>
+            </div>
+            <div class="contact-item">
                 <div class="icon">📍</div>
-                <span>Dubai, UAE</span>
+                <span>Muscat, Oman &bull; Dubai, UAE</span>
             </div>
             <div class="contact-item">
                 <div class="icon">💼</div>
@@ -1724,8 +1973,13 @@
             </a>
             <a href="mailto:chefanshid@gmail.com" class="hire-card">
                 <div class="hire-icon">📧</div>
-                <div class="hire-title">Email</div>
+                <div class="hire-title">Personal Email</div>
                 <div class="hire-val">chefanshid@gmail.com</div>
+            </a>
+            <a href="mailto:baytalbites@gmail.com" class="hire-card">
+                <div class="hire-icon">🍽️</div>
+                <div class="hire-title">Bayt Al Bites</div>
+                <div class="hire-val">baytalbites@gmail.com</div>
             </a>
             <a href="https://wa.me/971569503813" target="_blank" class="hire-card">
                 <div class="hire-icon">💬</div>
